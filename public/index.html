@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Apartment Visitor Management</title><link rel="stylesheet" href="/styles.css"></head>
+<body><div id="toast" class="toast"></div>
+<section id="loginView" class="login-wrap">
+  <div class="login-card"><div class="brand-mark">AV</div><p class="eyebrow">SECURE COMMUNITY</p><h1>Apartment Visitor<br>Management</h1><p class="muted">Sign in to manage your community's visitor activity.</p>
+  <form id="loginForm"><label>Username / Email<input name="username" autocomplete="username" required placeholder="security"></label><label>Password<input name="password" type="password" autocomplete="current-password" required placeholder="Enter password"></label><button class="primary full">Sign in <span>→</span></button></form>
+  <div class="demo"><b>Demo access</b><span>Security: security / Security@123</span><span>Resident: aarav@example.com / Resident@123</span></div></div>
+</section>
+<div id="appView" class="app hidden">
+  <aside class="sidebar"><div class="brand"><span class="brand-mark small">AV</span><div><b>Gatekeeper</b><small>Community portal</small></div></div>
+    <div class="nav-label">WORKSPACE</div><nav id="nav"></nav><div class="side-bottom"><div class="avatar">S</div><div class="user-info"><b id="userName">User</b><small id="userRole">Account</small></div><button id="logout" class="logout" title="Sign out">↗</button></div>
+  </aside>
+  <main class="main"><header class="topbar"><div><p class="eyebrow" id="todayLabel">COMMUNITY OVERVIEW</p><h2 id="pageTitle">Dashboard</h2></div><div class="top-right"><span class="live-dot"></span><span>Gate is active</span><div class="top-avatar">A</div></div></header><div id="content" class="content"></div></main>
+</div>
+<dialog id="modal"><form id="modalForm" method="dialog"><div class="modal-head"><div><p class="eyebrow">RECORD DETAILS</p><h3 id="modalTitle">Add record</h3></div><button type="button" class="icon-btn" id="closeModal">×</button></div><div id="modalFields" class="form-grid"></div><div class="modal-actions"><button type="button" class="secondary" id="cancelModal">Cancel</button><button class="primary" type="submit">Save record</button></div></form></dialog>
+<script src="/app.js"></script></body></html>
